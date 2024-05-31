@@ -18,7 +18,7 @@
 export UPS_OVERRIDE="-H Linux64bit+3.10-2.17"
 
 # Navigate to the directory where additional setup will be done
-cd /exp/dune/app/users/mazam/production/CAFs/MiniRun5
+cd /exp/dune/app/users/<your directory>
 
 # Source the DUNE setup script to configure the environment for DUNE software
 source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
@@ -50,12 +50,6 @@ export PATH=$PATH:$GEANT4_FQ_DIR/bin
 
 # Suppress ROOT include errors
 export ROOT_INCLUDE_PATH=$ROOT_INCLUDE_PATH:$GENIE_INC/GENIE
-
-# nusystematics paths
-# export NUSYST=${PWD}/nusystematics
-# export LD_LIBRARY_PATH=${NUSYST}/build/Linux/lib:$LD_LIBRARY_PATH
-# export LD_LIBRARY_PATH=${NUSYST}/build/nusystematics/artless:$LD_LIBRARY_PATH
-# export FHICL_FILE_PATH=${NUSYST}/nusystematics/fcl:$FHICL_FILE_PATH
 
 # Add pyGeoEff to PYTHONPATH
 export PYTHONPATH=${PYTHONPATH}:${PWD}/DUNE_ND_GeoEff/lib/
