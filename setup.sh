@@ -57,6 +57,11 @@ export PYTHONPATH=${PYTHONPATH}:${PWD}/DUNE_ND_GeoEff/lib/
 # duneanaobj needs to be in the library paths too
 export LD_LIBRARY_PATH=${DUNEANAOBJ_LIB}:$LD_LIBRARY_PATH
 
+# To run the given code, use the following commands
+
+g++ -std=c++17 -O2 -g -pedantic -Wall `root-config --cflags --glibs` analysis.cc -o plotter -I/cvmfs/dune.opensciencegrid.org/products/dune/duneanaobj/v03_02_01/include -I$SRPROXY_INC -L$DUNEANAOBJ_LIB -lduneanaobj_StandardRecordProxy -L $DUNEANAOBJ_LIB -lduneanaobj_StandardRecord -L $DUNEANAOBJ_LIB -lduneanaobj_StandardRecord_dict
+./plotter MiniRun5.txt analysis_output.root
+
 # Finally, add our lib & bin directories to the paths
 mydir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 export LD_LIBRARY_PATH=$mydir/lib:$LD_LIBRARY_PATH
