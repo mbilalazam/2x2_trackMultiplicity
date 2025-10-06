@@ -1,4 +1,22 @@
-# 2x2_trackMultiplicity
-This repository contains essential analysis codes for DUNE Near Detector Prototype (aka 2x2) Charged Track Multiplicity analysis.
+# DUNE 2x2 Charged Track Multiplicity Analysis
 
-The main analysis file is ``analysis.cc``. I am cleaning, refining and adding comments to this script for better understanding. Will update with an enhancced version of it over the next few days.
+This repository contains analysis code for studying charged track multiplicity in the DUNE Near Detector Prototype (commonly referred to as the **2x2**).
+
+## Files
+
+- `analysis.cc` — Core script for processing and analyzing track multiplicity
+- `multiplicity_08Aug2024.cc` — Refined/alternate version of the analysis
+- `MiniRun5.txt` — Possibly input data or metadata
+- `charged_track_multiplicity_31May2024.pdf` — Report or summary of the analysis
+- `setup.sh` — Environment setup script
+
+## Status
+
+- Scripts are under active refinement
+- Comments and structure are being improved
+- Future updates will include enhanced versions and better documentation
+
+## Notes
+
+This repo is part of ongoing work and not a finalized publication repository.
+It helps track updates, analysis outputs, and script versions over time.
